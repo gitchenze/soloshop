@@ -107,6 +107,8 @@ class GoodsController extends AdminController {
                 }
             }*/
 
+        }else{
+            self::$save_cate=$cate;
         }
 
 //        $cate           =   list_to_tree($cate);    //生成分类树
