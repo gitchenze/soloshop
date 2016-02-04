@@ -71,16 +71,12 @@ class GoodsController extends AdminController {
         $cate_auth  =   AuthGroupModel::getAuthCategories(UID); //获取当前用户所有的内容权限节点
 
         $cate_auth  =   $cate_auth == null ? array() : $cate_auth;
-        /*  echo 'star cate_auth <br>';
-                var_dump($cate_auth);
-                echo 'end cate_auth <br>';*/
 		$cate       =   M('Category')->where(array('status'=>1,'ismenu'=>$ismenu))->field('id,title,pid,allow_publish')->order('pid,sort')->select();
 
         //没有权限的分类则不显示
 
 //        获取扩展权限表的权限id
         $extendArr=AuthGroupModel::getExtendOfGroup(UID,1);
-
 
         //用于显示商品分类左边silder 二〇一六年二月四日 09:16:18
 
