@@ -3,4 +3,7 @@
 
 基于TP->OneThink->yershop->SOLOshop
 
+
+
+Aze
 修改了 后台商品 左边栏目(商品分类)的权限 和显示
